@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "file": "bundle.css",
+  "sources": [
+    "../../App.svelte"
+  ],
+  "sourcesContent": [
+    "<script>\n\tlet hereKitty = false;\n\n\tconst handleMouseenter = () => hereKitty = true;\n\tconst handleMouseleave = () => hereKitty = false;\n</script>\n\n<style>\n\timg {\n\t\tposition: absolute;\n\t\tleft: 0;\n\t\tbottom: -60px;\n\t\ttransform: translate(-80%, 0) rotate(-30deg);\n\t\ttransform-origin: 100% 100%;\n\t\ttransition: transform 0.4s;\n\t}\n\n\t.curious {\n\t\ttransform: translate(-15%, 0) rotate(0deg);\n\t}\n\n\t:global(body) {\n\t\toverflow: hidden;\n\t}\n</style>\n\n<svelte:body\n\ton:mouseenter={handleMouseenter}\n\ton:mouseleave={handleMouseleave}\n/>\n\n<!-- creative commons BY-NC http://www.pngall.com/kitten-png/download/7247 -->\n<img\n\tclass:curious={hereKitty}\n\talt=\"Kitten wants to know what's going on\"\n\tsrc=\"tutorial/kitten.png\"\n>"
+  ],
+  "names": [],
+  "mappings": "AAQC,GAAG,cAAC,CAAC,AACJ,QAAQ,CAAE,QAAQ,CAClB,IAAI,CAAE,CAAC,CACP,MAAM,CAAE,KAAK,CACb,SAAS,CAAE,UAAU,IAAI,CAAC,CAAC,CAAC,CAAC,CAAC,OAAO,MAAM,CAAC,CAC5C,gBAAgB,CAAE,IAAI,CAAC,IAAI,CAC3B,UAAU,CAAE,SAAS,CAAC,IAAI,AAC3B,CAAC,AAED,QAAQ,cAAC,CAAC,AACT,SAAS,CAAE,UAAU,IAAI,CAAC,CAAC,CAAC,CAAC,CAAC,OAAO,IAAI,CAAC,AAC3C,CAAC,AAEO,IAAI,AAAE,CAAC,AACd,QAAQ,CAAE,MAAM,AACjB,CAAC"
+}
